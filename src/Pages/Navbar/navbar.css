@@ -1,0 +1,47 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px; /* Adjust padding as needed */
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.logo-section .logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* Space between links */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #007bff; /* Example hover color */
+}
+
+.cta-button .open-account-btn {
+  background-color: #aaff00; /* Greenish-yellow color */
+  color: #333; /* Dark text for contrast */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button .open-account-btn:hover {
+  background-color: #99ee00; /* Slightly darker on hover */
+}

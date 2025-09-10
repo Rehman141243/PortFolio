@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+/* ========================= */
+/* ANIMATIONS */
+/* ========================= */
+
+@keyframes homeorbit {
+  from {
+    transform: rotate(0deg) translateX(var(--orbit-radius)) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(var(--orbit-radius)) rotate(-360deg);
+  }
+}
+
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0; transform: scale(0); }
+  50% { opacity: 1; transform: scale(1); }
+}
+
+.home-pulse-icon {
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+/* ========================= */
+/* BASE STYLES */
+/* ========================= */
+
+.home-orbit-container,
+.home-ai-circle {
+  width: 400px;
+  height: 400px;
+}
+
+:root {
+  --orbit-radius: 210px; /* default desktop orbit distance */
+}
+
+/* ========================= */
+/* RESPONSIVE BREAKPOINTS */
+/* ========================= */
+
+/* Tablets (<= 1024px) */
+@media (max-width: 1024px) {
+  .home-hero-layout {
+    flex-direction: column !important;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .home-orbit-container,
+  .home-ai-circle {
+    width: 350px !important;
+    height: 350px !important;
+  }
+
+  :root {
+    --orbit-radius: 180px;
+  }
+}
+
+/* Mobile (<= 768px) */
+@media (max-width: 768px) {
+  .home-main-heading {
+    font-size: clamp(1.8rem, 6vw, 2.5rem) !important;
+  }
+
+  .home-description {
+    font-size: clamp(1rem, 4vw, 1.2rem) !important;
+    margin-bottom: 32px !important;
+  }
+
+  .home-button-container {
+    justify-content: center;
+  }
+
+  .home-floating-cards-container {
+    flex-direction: row !important;
+    gap: 12px !important;
+    margin-bottom: 40px !important;
+    flex-wrap: wrap;
+  }
+
+  .home-orbit-container,
+  .home-ai-circle {
+    width: 280px !important;
+    height: 280px !important;
+  }
+
+  :root {
+    --orbit-radius: 140px;
+  }
+}
+
+/* Extra Small Phones (<= 480px) */
+@media (max-width: 480px) {
+  .home-main-heading {
+    font-size: clamp(1.5rem, 8vw, 2rem) !important;
+  }
+
+  .home-floating-cards-container {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+  }
+
+  .home-orbit-container,
+  .home-ai-circle {
+    width: 220px !important;
+    height: 220px !important;
+  }
+
+  :root {
+    --orbit-radius: 110px;
+  }
+}
+
+/* ========================= */
+/* HEIGHT ADJUSTMENTS */
+/* ========================= */
+
+@media (max-width: 1024px) {
+  .home-container {
+    min-height: 40vh !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    min-height: 100vh !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container {
+    min-height: 160vh !important;
+  }
+}
