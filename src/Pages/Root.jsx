@@ -86,8 +86,8 @@ export default function Root() {
           }
         }
       `}</style>
-       <FollowerPointerCard
-       >
+       {/* <FollowerPointerCard
+       > */}
       <Header />
  
         <Home />
@@ -95,7 +95,7 @@ export default function Root() {
         <About />
         <Projects/>
         <ContactForm/>
-      </FollowerPointerCard>
+      {/* </FollowerPointerCard> */}
 
     </>
   );

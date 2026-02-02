@@ -107,7 +107,7 @@ const About = () => {
             <div style={imageContainerStyle}>
               <div style={gradientOverlayStyle} />
               <img 
-                src="/mani.png"
+                src="/unnamed.jpg"
                 alt="Profile"
                 style={{
                   width: '100%',

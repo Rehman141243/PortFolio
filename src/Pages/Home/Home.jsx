@@ -771,7 +771,7 @@ const Home = () => {
                 {/* Main AI Circle with Image */}
                 <div style={styles.aiCircle} className="home-ai-circle">
                   <img
-                    src='/unnamed.jpg'
+                    src='/mine.png'
                     alt="Abdul Rehman"
                     style={{
                       borderRadius: '50%', 
